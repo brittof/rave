@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+
+  text-wrap: balance;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100dvh;
+  padding-block: 5vh clamp(1rem, 5vh, 3rem);
+
+  max-inline-size: 70ch;
+  margin-inline: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main {
+  margin-block: 5vh clamp(1rem, 5vh, 3rem);
+}
+
+.active {
+  color: #a448ff;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-position: under;
+}
